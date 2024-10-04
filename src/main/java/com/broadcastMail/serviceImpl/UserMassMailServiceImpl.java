@@ -282,7 +282,7 @@ public class UserMassMailServiceImpl implements UserMassMailService {
             }
             mimeMessageHelper.setText(formattedBody.toString(), true);
             mimeMessageHelper.setFrom(excelDto.getUsername());
-            mimeMessageHelper.setSubject(excelDto.getSubject());
+            mimeMessageHelper.setSubject(excelDto.getSubject()  );
 
             if (emailAndFilenameList.size() > 1) {
                 String filenames = emailAndFilenameList.get(1);

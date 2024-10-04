@@ -11,6 +11,7 @@
 	<groupId>com.broadcastMail</groupId>
 	<artifactId>eidiko-broadcast-mail-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>eidiko-broadcast-mail-backend</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -103,6 +104,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

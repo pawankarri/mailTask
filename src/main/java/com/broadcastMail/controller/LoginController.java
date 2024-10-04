@@ -33,6 +33,7 @@ public class LoginController {
     @Autowired
     private AuthenticationManager authenticate;
 
+
     Map<String, Object> map = new HashMap<>();
     @PostMapping("/login")
     public ResponseEntity<Map<String, Object>> login(@RequestBody LoginDto loginDto) throws Exception {
@@ -65,7 +66,6 @@ public class LoginController {
             throw new BadCredentialsException("bad credentials");
         }
     }
-
 
     @GetMapping("/forgot-password")
     public ResponseEntity<Map<String, Object>> forgotPassword()throws MessagingException, IOException {
